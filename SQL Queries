@@ -1,0 +1,20 @@
+/****** script for Create databases Employee ******/
+CREATE DATABASE [Employee]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+
+/****** script for Insert data in Accounts Table ******/
+Insert into Accounts values(1234,'Kavita Singh',988982,'test address')
+Insert into Accounts values(237,'sumit',7676238,'test address')
+Insert into Accounts values(39223,'akash',988982,'test address')
+Insert into Accounts values(238938,'rahul',7676238,'test address')
+Insert into Accounts values(2387,'rohit',988982,'test address')
+Insert into Accounts values(2378,'sangram',7676238,'test address');
+
+
+/****** script for retrieve data  ******/
+SELECT [account]
+      ,[Name]
+      ,[Mobile]
+      ,[address]
+  FROM [Employee].[dbo].[Accounts]
